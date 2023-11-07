@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pork and Go Kenya</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="icon" type="image/x-icon" href="/Users/USER/Desktop/sample/images/porkandgologo.png">
+
+    <style>
+         /* Add your CSS styles here */
+         body {
+            font-family: 'Poppins';
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        h1 {
+            position: relative;
+            font-size: 24px; /* Adjust the font size */
+            color: #fff; /* Adjust the text color */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-image {
+            max-width: 100%;
+        }
+
+        .social-links {
+            position: sticky;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .social-link {
+            margin: 10px 0;
+        }
+
+        .social-link img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease; /* Add transition for smooth movement */
+        }
+
+        /* Add hover effect for social link images */
+        .social-link img:hover {
+            transform: translateY(-5px); /* Move the image up by 5 pixels on hover */
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Styling for the container of the sticky icons */
+        .sticky-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styling for each individual sticky icon */
+        .sticky-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Spacing between icons */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .menu-image {
+                max-width: 100%; /* Increase image width for smaller screens */
+            }
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #fff; /* White background */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #ff5722; /* Orange text color */
+        }
+
+        .phone-number {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #4caf50; /* Green text color for the phone number */
+        }
+
+        .phone-number a {
+            color: #ffc107;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .phone-number a:hover {
+            color: #ff5722;
+        }
+
+        /* Header Animation (Optional) */
+        .header-animation {
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .phone-number {
+                font-size: 20px;
+            }
+        }
+
+        /* Keyframe Animation (Optional) */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pork and Go</h1>
+        <p class="phone-number">Call us at: <a href="tel:123-456-7890">0710554077</a></p>
+
+    </header>
+    <section>
+        <img class="menu-image" src="images/2.png" alt="Menu Image 1">
+        <img class="menu-image" src="images/3.png" alt="Menu Image 2">
+        <img class="menu-image" src="images/4.png" alt="Menu Image 3">
+
+        <div class="sticky-icons">
+            <!-- Sticky icon 1 -->
+            <div class="sticky-icon">
+                <a class="social-link" href="https://www.facebook.com/profile.php?id=100087056724321&mibextid=nW3QTL"><img src="images/facebook.png" alt="Facebook"></a>
+            </div>
+    
+            <!-- Sticky icon 2 -->
+            <div class="sticky-icon">
+                <a class="social-link" href="https://www.tiktok.com/@porkngo?_t=8foW30BwHjy&_r=1"><img src="images/tiktok.png" alt="Twitter"></a>
+            </div>
+    
+            <!-- Sticky icon 3 -->
+            <div class="sticky-icon">
+                <a class="social-link" href="https://www.instagram.com/pork_and_go/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        &copy; 2023 Pork and Go
+    </footer>
+    
+   
+</body>
+</html>
