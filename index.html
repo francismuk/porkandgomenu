@@ -5,204 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pork and Go Kenya</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="icon" type="image/x-icon" href="/Users/USER/Desktop/sample/images/porkandgologo.png">
-
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
     <style>
-         /* Add your CSS styles here */
-         body {
-            font-family: 'Poppins';
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-        }
-        h1 {
-            position: relative;
-            font-size: 24px; /* Adjust the font size */
-            color: #fff; /* Adjust the text color */
-        }
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+/* Font and general styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-        .menu-container {
-            display: flex;
-            justify-content: space-between;
-        }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-        .menu-image {
-            max-width: 100%;
-        }
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        .social-links {
-            position: sticky;
-            top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
+.title {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
 
-        .social-link {
-            margin: 10px 0;
-        }
+.topnav {
+    margin-top: 10px;
+}
 
-        .social-link img {
-            width: 60px;
-            height: 60px;
-            transition: transform 0.3s ease; /* Add transition for smooth movement */
-        }
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
 
-        /* Add hover effect for social link images */
-        .social-link img:hover {
-            transform: translateY(-5px); /* Move the image up by 5 pixels on hover */
-        }
+.topnav a:hover {
+    color: #ff5722;
+}
 
-        section {
-            text-align: center;
-            padding: 20px;
-        }
+/* Hero section styles */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
+.hero-text {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-        /* Styling for the container of the sticky icons */
-        .sticky-icons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-        }
+/* Phone number styles */
+.phone-number {
+    font-size: 18px;
+    color: #fff;
+}
 
-        /* Styling for each individual sticky icon */
-        .sticky-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            cursor: pointer;
-            margin-bottom: 10px; /* Spacing between icons */
-        }
+.phone-number a {
+    color: #ffc107;
+    text-decoration: none;
+}
 
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            .menu-image {
-                max-width: 100%; /* Increase image width for smaller screens */
-            }
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+/* Menu section styles */
+.menu {
+    padding: 50px 0;
+    text-align: center;
+}
 
-        /* Header Styles */
-        .header {
-            background-color: #fff; /* White background */
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        }
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
 
-        .header h1 {
-            margin: 0;
-            font-size: 36px;
-            text-transform: uppercase;
-            color: #ff5722; /* Orange text color */
-        }
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-        .phone-number {
-            font-size: 24px;
-            margin-top: 10px;
-            color: #4caf50; /* Green text color for the phone number */
-        }
+.menu-image {
+    flex: 0 0 30%; /* Adjust the width as needed */
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+}
 
-        .phone-number a {
-            color: #ffc107;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
-        .phone-number a:hover {
-            color: #ff5722;
-        }
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 
-        /* Header Animation (Optional) */
-        .header-animation {
-            animation: fadeInUp 1s ease;
-        }
+    .title {
+        font-size: 24px;
+    }
 
-        /* Responsive Styles */
-        @media screen and (max-width: 768px) {
-            .header h1 {
-                font-size: 28px;
-            }
+    .topnav a {
+        font-size: 16px;
+    }
 
-            .phone-number {
-                font-size: 20px;
-            }
-        }
+    .hero {
+        padding: 80px 0;
+    }
 
-        /* Keyframe Animation (Optional) */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <link rel="shortcut icon" href="./images/porkandgologo.png">
+    .hero-text {
+        font-size: 28px;
+    }
+
+    .phone-number {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .menu-image {
+        flex: 0 0 45%; /* Adjust the width for smaller screens */
+    }
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Pork and Go!</h1>
-        <p class="phone-number">Call us at: <a href="tel:0710554077">0710554077</a></p>
-
+    <header class="header">
+        <h1 class="title">Pork and Go Restaurant</h1>
+        <nav class="topnav">
+            <a href="tel:0710554077">Reserve: 0710554077</a>
+        </nav>
     </header>
-    <section>
-        <img class="menu-image" src="images/2.png" alt="Menu Image 1">
-        <img class="menu-image" src="images/3.png" alt="Menu Image 2">
-        <img class="menu-image" src="images/4.png" alt="Menu Image 3">
-        <img class="menu-image" src="images/5.png" alt="Menu Image 4">
-        <img class="menu-image" src="images/6.png" alt="Menu Image 5">
-        <img class="menu-image" src="images/7.png" alt="Menu Image 6">
-
-
-        <div class="sticky-icons">
-            <!-- Sticky icon 1 -->
-            <div class="sticky-icon">
-                <a class="social-link" href="https://www.facebook.com/profile.php?id=100087056724321&mibextid=nW3QTL"><img src="images/facebook.png" alt="Facebook"></a>
-            </div>
-    
-            <!-- Sticky icon 2 -->
-            <div class="sticky-icon">
-                <a class="social-link" href="https://www.tiktok.com/@porkngo?_t=8foW30BwHjy&_r=1"><img src="images/tiktok.png" alt="Twitter"></a>
-            </div>
-    
-            <!-- Sticky icon 3 -->
-            <div class="sticky-icon">
-                <a class="social-link" href="https://www.instagram.com/pork_and_go/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
-            </div>
-            
+        <div class="scroll-container">
+            <img class="menu-image" src="images/2.png" alt="Menu Image 1">
+            <img class="menu-image" src="images/3.png" alt="Menu Image 2">
+            <img class="menu-image" src="images/4.png" alt="Menu Image 3">
+            <img class="menu-image" src="images/5.png" alt="Menu Image 4">
+            <img class="menu-image" src="images/6.png" alt="Menu Image 5">
+            <img class="menu-image" src="images/7.png" alt="Menu Image 6">
         </div>
-        
-    </section>
-    <footer>
-        &copy; 2023 Pork and Go
+    <footer class="footer">
+        &copy; 2024 Pork and Go
     </footer>
-    
-   
 </body>
 </html>
