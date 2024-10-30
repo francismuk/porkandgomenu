@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic Stories Carousel</title>
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Smaller Transparent Logo Container */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem; /* Reduced padding for a smaller logo container */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+        }
+
+        .logo-container img {
+            width: 60px; /* Adjust logo size */
+            height: auto;
+            max-width: 80px;
+        }
+
+        /* Carousel Container */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 4rem auto 1rem auto; /* Space for logo */
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Individual Carousel Item */
+        .carousel-item {
+            min-width: 100%; /* Ensures one item takes the full width */
+            position: relative;
+        }
+
+        .carousel-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1; /* Ensures images are square */
+            object-fit: cover;
+        }
+
+        /* Content Overlay */
+        .carousel-content {
+            position: absolute;
+            bottom: 20px;
+            left: 10%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 0.8rem;
+            max-width: 80%;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .carousel-content h2 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .carousel-content p {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            background-color: #ffcb05;
+            color: #333;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ffa000;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 2rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            border: none;
+            z-index: 2; /* Ensure buttons are above the images */
+        }
+
+        .prev {
+            left: 10px; /* Adjusted to provide more space */
+        }
+
+        .next {
+            right: 10px; /* Adjusted to provide more space */
+        }
+
+        /* Responsive adjustments for mobile and desktop */
+        @media (max-width: 768px) {
+            .carousel-content h2 {
+                font-size: 0.9rem; /* Smaller font size for mobile */
+            }
+            .carousel-content p {
+                font-size: 0.7rem; /* Smaller font size for mobile */
+            }
+            .prev, .next {
+                font-size: 1.5rem; /* Smaller button size for mobile */
+                padding: 0.3rem; /* Adjust padding for buttons */
+            }
+        }
+
+        @media (min-width: 769px) {
+            .carousel-content h2 {
+                font-size: 1.2rem; /* Larger font size for desktop */
+            }
+            .carousel-content p {
+                font-size: 1rem; /* Larger font size for desktop */
+            }
+            .prev, .next {
+                font-size: 2rem; /* Consistent button size for desktop */
+                padding: 0.5rem; /* Consistent padding for buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Smaller Transparent Logo Container -->
+    <div class="logo-container">
+        <img src="images/banner.png" alt="Website Logo">
+    </div>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slide 1 -->
+            <div class="carousel-item">
+                <div class="carousel-image">
+                    <img src="offerimages/1.png" alt="Story 1">
+                    <div class="carousel-content">
+                        <h2>Classic Burger with Fries and FREE Soda/Mojito</h2>
+                        <p>Our Juicy Classic Burger comes with Fries on the side and a FREE Drink to spice up your day!</p>
+                        <button onclick="window.location.href='story1.html'">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="carousel-image">
+                    <img src="offerimages/2.png" alt="Story 2">
+                    <div class="carousel-content">
+                        <h2>Story Title 2</h2>
+                        <p>Brief story description goes here. Captivating content to engage readers.</p>
+                        <button onclick="window.location.href='story2.html'">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="carousel-image">
+                    <img src="offerimages/3.png" alt="Story 3">
+                    <div class="carousel-content">
+                        <h2>Story Title 3</h2>
+                        <p>Brief story description goes here. Captivating content to engage readers.</p>
+                        <button onclick="window.location.href='story3.html'">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <div class="carousel-image">
+                    <img src="offerimages/4.png" alt="Story 4">
+                    <div class="carousel-content">
+                        <h2>Story Title 4</h2>
+                        <p>Brief story description goes here. Captivating content to engage readers.</p>
+                        <button onclick="window.location.href='story4.html'">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image">
+                    <img src="offerimages/5.png" alt="Story 5">
+                    <div class="carousel-content">
+                        <h2>Story Title 4</h2>
+                        <p>Brief story description goes here. Captivating content to engage readers.</p>
+                        <button onclick="window.location.href='story5.html'">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(step) {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+
+            currentIndex = (currentIndex + step + totalItems) % totalItems;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Auto-play the carousel every 5 seconds
+        setInterval(() => moveSlide(1), 5000);
+    </script>
+</body>
+</html>
