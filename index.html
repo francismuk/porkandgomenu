@@ -4,167 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pork and Go Kenya</title>
+    
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    
+    <!-- External CSS (optional) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon (Logo in browser tab) -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Pork and Go Kenya. Home of delicious Pork, Chicken, Rabbit and Fish.">
+
     <style>
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Font and general styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-/* Header Styles */
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        /* Header */
+        .header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-.title {
-    margin-bottom: 10px;
-    font-size: 28px;
-}
+        .title {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
 
-.topnav {
-    margin-top: 10px;
-}
+        .topnav {
+            margin-top: 10px;
+        }
 
-.topnav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
+        .topnav a {
+            color: #ff5722;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
 
-.topnav a:hover {
-    color: #ff5722;
-}
+        .topnav a:hover {
+            color: #000000;
+        }
 
-/* Hero section styles */
-.hero {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
-}
+        /* Hero section */
+        .hero {
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
 
-.hero-text {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 20px;
-}
+        .hero-text {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
 
-/* Phone number styles */
-.phone-number {
-    font-size: 18px;
-    color: #fff;
-}
+        .phone-number {
+            font-size: 18px;
+            color: #fff;
+        }
 
-.phone-number a {
-    color: #ffc107;
-    text-decoration: none;
-}
+        .phone-number a {
+            color: #ffc107;
+            text-decoration: none;
+        }
 
-/* Menu section styles */
-.menu {
-    padding: 50px 0;
-    text-align: center;
-}
+        /* Menu section */
+        .menu {
+            padding: 50px 0;
+            text-align: center;
+        }
 
-.section-title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 30px;
-}
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
 
-.scroll-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        .scroll-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.menu-image {
-    flex: 0 0 30%; /* Adjust the width as needed */
-    margin: 0 10px;
-    max-width: 70%;
-    height: auto;
-}
+        .menu-image {
+            flex: 0 0 30%;
+            margin: 10px;
+            max-width: 70%;
+            height: auto;
+        }
 
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
 
-    .title {
-        font-size: 24px;
-    }
+            .title {
+                font-size: 24px;
+            }
 
-    .topnav a {
-        font-size: 16px;
-    }
+            .topnav a {
+                font-size: 16px;
+            }
 
-    .hero {
-        padding: 80px 0;
-    }
+            .hero {
+                padding: 80px 0;
+            }
 
-    .hero-text {
-        font-size: 28px;
-    }
+            .hero-text {
+                font-size: 28px;
+            }
 
-    .phone-number {
-        font-size: 16px;
-    }
+            .phone-number {
+                font-size: 16px;
+            }
 
-    .section-title {
-        font-size: 20px;
-    }
+            .section-title {
+                font-size: 20px;
+            }
 
-    .menu-image {
-        flex: 0 0 45%; /* Adjust the width for smaller screens */
-    }
-}
-</style>
+            .menu-image {
+                flex: 0 0 45%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <img src="images/logo.png" alt="Pork and Go Logo" style="height: 75px; width: auto;">
+        
+    </div>
+    <nav class="topnav">
         <h1 class="title">Pork and Go Restaurant</h1>
-        <nav class="topnav">
-            <a href="tel:0710554077">Reserve: 0710554077</a>
-        </nav>
-    </header>
+        <a href="tel:0710554077">Order/Reserve: 0710554077</a>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        <div class="hero-text">Delicious Pork Meals Delivered to You</div>
+        <div class="phone-number"><a href="tel:0710554077">Call to Order: 0710554077</a></div>
+    </section> -->
+
+    <!-- Menu Section -->
+    <section class="menu container">
+        <h2 class="section-title">Our Menu</h2>
         <div class="scroll-container">
-            <img class="menu-image" src="images/2.png" alt="Menu Image 1">
-            <img class="menu-image" src="images/3.png" alt="Menu Image 2">
-            <img class="menu-image" src="images/4.png" alt="Menu Image 3">
-            <img class="menu-image" src="images/5.png" alt="Menu Image 4">
-            <img class="menu-image" src="images/6.png" alt="Menu Image 5">
-            <img class="menu-image" src="images/7.png" alt="Menu Image 6">
-            <img class="menu-image" src="images/8.png" alt="Menu Image 7">
+            <img class="menu-image" src="images/2.png" alt="Grilled pork platter" loading="lazy">
+            <img class="menu-image" src="images/3.png" alt="Pork ribs with fries" loading="lazy">
+            <img class="menu-image" src="images/4.png" alt="Pork stir fry" loading="lazy">
+            <img class="menu-image" src="images/5.png" alt="Fried pork belly" loading="lazy">
+            <img class="menu-image" src="images/6.png" alt="Spicy pork skewers" loading="lazy">
+            <img class="menu-image" src="images/7.png" alt="Pork and ugali combo" loading="lazy">
+            <img class="menu-image" src="images/8.png" alt="Grilled pork sausage" loading="lazy">
         </div>
+    </section>
+
     <footer class="footer">
         &copy; 2024 Pork and Go
     </footer>
